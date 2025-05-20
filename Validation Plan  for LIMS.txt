@@ -1,0 +1,168 @@
+﻿Validation Plan (VP) for LIMS
+(GAMP 5 Category 4 – Configured System)
+________________
+
+
+✅ 1. Document Control
+Field
+	Value
+	Document Title
+	Validation Plan – LIMS System
+	Version
+	1.0
+	Prepared By
+	[Your Name], CSV Engineer
+	Reviewed By
+	QA, IT, Lab Manager
+	Approved By
+	Quality Head, Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+This Validation Plan outlines the approach, scope, responsibilities, and documentation required to validate the LIMS system, ensuring it meets intended use and complies with GxP and 21 CFR Part 11 requirements.
+________________
+
+
+✅ 3. Scope
+* Validation of [System Name] LIMS
+
+* Includes core modules: Sample Management, Test Scheduling, Result Entry, Reporting
+
+* Interfaces with lab instruments, ERP system, and archival repository
+
+* Includes Part 11 compliance and data integrity controls
+
+* Covers Installation (IQ), Operational (OQ), and Performance Qualification (PQ)
+
+________________
+
+
+✅ 4. System Overview
+Brief technical and functional description of the LIMS:
+   * Vendor: [Vendor Name]
+
+   * Deployment: On-premise / cloud
+
+   * Technologies: Web-based client, Oracle DB
+
+   * GAMP Category: 4 (configured system)
+
+   * Key Functions: Sample registration, test logging, instrument integration
+
+________________
+
+
+✅ 5. Validation Strategy
+      * Risk-based approach per GAMP 5
+
+      * Validate critical-to-quality functions
+
+      * Leverage vendor documentation where appropriate
+
+      * Trace all requirements to test cases via Traceability Matrix
+
+________________
+
+
+✅ 6. Roles and Responsibilities
+Role
+	Responsibility
+	Validation Lead
+	Author VP, manage execution
+	QA
+	Review/approve all validation documents
+	Business Owner
+	Provide URS, perform PQ
+	IT/System Owner
+	Support FS/DS, environment setup
+	Vendor
+	Provide config, install, vendor test docs
+	
+
+
+
+
+
+
+
+
+
+✅ 7. Documents and Deliverables
+Phase
+	Deliverables
+	Planning
+	Validation Plan, Risk Assessment
+	Requirements
+	URS, Functional Spec, Design Spec
+	Testing
+	IQ, OQ, PQ Protocols & Reports
+	Compliance
+	21 CFR Part 11 Checklist, TM
+	Completion
+	Validation Summary Report
+	________________
+
+
+✅ 8. Acceptance Criteria
+         * All protocols executed successfully
+
+         * Deviations addressed via CAPA
+
+         * Final report approved
+
+         * System released for operational use
+
+         * Training completed for all users
+
+________________
+
+
+✅ 9. Deviation Handling
+            * Deviations during validation must be logged
+
+            * Root cause analysis to be performed
+
+            * CAPA initiated and documented
+
+            * Retesting performed where needed
+
+            * All deviations closed prior to final approval
+
+________________
+
+
+✅ 10. Change Control
+               * All changes post-validation must follow formal Change Control process
+
+               * Impact assessed and revalidation performed if necessary
+
+               * Records updated and approved by QA
+
+________________
+
+
+✅ 11. References
+                  * GAMP 5: A Risk-Based Approach to Compliant GxP Computerized Systems
+
+                  * 21 CFR Part 11
+
+                  * ICH Q9 – Quality Risk Management
+
+                  * Company SOPs: CSV-001, QA-002…
+
+________________
+
+
+✅ 12. Appendices
+                     * Appendix A – System Architecture Diagram
+
+                     * Appendix B – Glossary of Terms
+
+                     * Appendix C – Risk Assessment Summary
+
+                     * Appendix D – Document List with Version Control
+
+________________
