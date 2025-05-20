@@ -1,0 +1,232 @@
+﻿Installation Qualification (IQ) Report
+System: Laboratory Information Management System (LIMS)
+Project: 
+Category: GAMP 5 – Category 4
+Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Value
+	Document Title
+	IQ Report – LIMS
+	Version
+	1.0
+	Prepared By
+	[Your Name]
+	Date
+	[Insert Date]
+	Reviewed By
+	QA Manager
+	Approved By
+	Compliance Lead
+	________________
+
+
+✅ 2. Objective
+To confirm that the LIMS system and its components were installed as per vendor specifications, that all infrastructure meets system requirements, and that the installation is adequately documented and verified.
+________________
+
+
+✅ 3. Summary of IQ Execution
+All installation qualification tests were executed in accordance with the approved IQ Protocol. Results were reviewed by QA, and screenshots/evidence were captured for each verification.
+________________
+
+
+✅ 4. Test Summary Table
+4.1 Software Inventory Verification
+Component
+	Version
+	Installed
+	Verified
+	Verified By
+	Date
+	LIMS Core Application
+	v3.8.0
+	✅
+	✅
+	J. Patel
+	2024-05-16
+	Oracle 19c Database
+	19.12
+	✅
+	✅
+	R. Singh
+	2024-05-16
+	Tomcat Server
+	9.0.65
+	✅
+	✅
+	R. Singh
+	2024-05-16
+	Windows Server
+	2019 Std
+	✅
+	✅
+	Infra Team
+	2024-05-16
+	Middleware
+	LabConnect
+	✅
+	✅
+	Vendor
+	2024-05-16
+	________________
+
+
+4.2 Hardware & Infrastructure
+Server / Component
+	Specification
+	Verified
+	Verified By
+	Date
+	App Server (LIMS-SVR-01)
+	16GB RAM, 500GB SSD
+	✅
+	IT Team
+	2024-05-16
+	DB Server (LIMS-DB-01)
+	32GB RAM, 1TB SSD, RAID 5
+	✅
+	IT Team
+	2024-05-16
+	Barcode Printer
+	Zebra ZD420, USB connected
+	✅
+	QA
+	2024-05-16
+	Workstation
+	Windows 10, Chrome 112+
+	✅
+	QA
+	2024-05-16
+	________________
+
+
+4.3 Directory/Path Check
+Directory Path
+	Exists
+	Access Controlled
+	Verified By
+	Date
+	C:\Program Files\LIMS\
+	✅
+	✅
+	Infra Team
+	2024-05-16
+	D:\LIMS_Backups\
+	✅
+	✅
+	IT
+	2024-05-16
+	\LIMS-SVR-01\InstrumentData\
+	✅
+	✅
+	IT
+	2024-05-16
+	________________
+
+
+4.4 Services and Ports
+Service / Port
+	Status
+	Verified
+	Verified By
+	Date
+	LIMS Web Application
+	Running
+	✅
+	QA
+	2024-05-16
+	Oracle Listener (1521)
+	Open
+	✅
+	DBA
+	2024-05-16
+	HTTPS (Port 443)
+	Open
+	✅
+	Infra Team
+	2024-05-16
+	________________
+
+
+4.5 Installation Logs Reviewed
+Log File
+	Reviewed
+	Comments
+	Verified By
+	LIMS Installation Log
+	✅
+	No errors found
+	Validation
+	Middleware Setup Log
+	✅
+	Complete
+	QA
+	Oracle Setup Log
+	✅
+	Verified instance
+	DBA
+	________________
+
+
+✅ 5. Deviations Summary
+ID
+	Description
+	Resolution
+	Closed By
+	Date
+	DEV-001
+	Tomcat config path mismatch
+	Updated config & restarted
+	IT Lead
+	2024-05-16
+	________________
+
+
+✅ 6. Attachments
+* Screenshots: Installation screens, service status
+
+* Logs: Installer logs, Oracle setup logs
+
+* System path structure screenshot
+
+* Network port test output
+
+* Signed IQ execution checklists
+
+________________
+
+
+✅ 7. Conclusion
+The Installation Qualification for the LIMS system is complete. All components were verified to be installed properly. Any deviations were resolved. The system is now ready for Operational Qualification (OQ).
+________________
+
+
+✅ 8. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Executed by
+	[Your Name]
+	
+
+	[Insert]
+	Witnessed by
+	QA Analyst
+	
+
+	[Insert]
+	Reviewed by
+	IT Lead
+	
+
+	[Insert]
+	Approved by
+	Compliance
+	
+
+	[Insert]

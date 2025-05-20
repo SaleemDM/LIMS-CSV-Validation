@@ -1,0 +1,204 @@
+﻿Design Specification (DS) – LIMS System
+(GAMP 5 Category 4 – Configured System)
+________________
+
+
+✅ 1. Document Control
+Field
+	Value
+	Document Title
+	Design Specification – LIMS
+	Version
+	1.0
+	Prepared By
+	[Your Name], System Analyst
+	Reviewed By
+	IT Architect, QA, Validation Lead
+	Approved By
+	Compliance Manager
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+To define the technical and configuration design of the Laboratory Information Management System (LIMS) that implements the functions described in the Functional Specification. This includes screen layouts, field logic, workflow rules, system integration, and security settings.
+________________
+
+
+✅ 3. Scope
+Covers design for the following components:
+* Sample management
+
+* Test entry and validation
+
+* Instrument interface
+
+* User access control
+
+* Audit trail configuration
+
+* Electronic signatures
+
+* Report templates
+
+* Data storage and backup logic
+
+________________
+
+
+✅ 4. System Architecture
+   * Architecture Type: 3-tier (Web UI – Application Server – DB Server)
+
+   * Database: Oracle 19c
+
+   * Web Interface: HTML5 with REST API
+
+   * Middleware: [Instrument Integration Tool, e.g. LabWare Interface Engine]
+
+Diagram (optional): Include system architecture visual with components and communication flow.
+________________
+
+
+✅ 5. Technical Design (Linked to FS)
+🔹 5.1 Login and Security
+DS ID
+	Description
+	Related FS ID
+	DS-001
+	Authentication via LDAP integration; fallback to LIMS internal auth.
+	FS-001
+	DS-002
+	Role-based access control configured in “User Management” module.
+	FS-002
+	DS-003
+	Password policy: 8+ chars, complexity enforced, 90-day expiry.
+	FS-060
+	________________
+
+
+🔹 5.2 Sample Management Design
+DS ID
+	Description
+	Related FS ID
+	DS-010
+	Sample registration screen includes auto-generated sample ID field (pattern: LIMS-YYYY-####).
+	FS-010
+	DS-011
+	Barcode printing configured via Zebra printer using JSPrint API.
+	FS-011
+	DS-012
+	Sample status is controlled by workflow engine rules with auto-transitions based on test completion.
+	FS-012
+	________________
+
+
+🔹 5.3 Test Assignment and Result Design
+DS ID
+	Description
+	Related FS ID
+	DS-020
+	Test templates are defined in “Test Library” with min/max range values.
+	FS-020
+	DS-021
+	Numeric result entry uses masked input controls and onBlur validation.
+	FS-021
+	DS-022
+	Warning messages triggered by rule: result < Min or > Max.
+	FS-022
+	DS-023
+	Audit trail engine logs create/edit/delete with timestamp and user ID.
+	FS-023
+	________________
+
+
+🔹 5.4 Instrument Integration
+DS ID
+	Description
+	Related FS ID
+	DS-030
+	File Watcher service polls “/uploads/instruments/” folder every 30 sec.
+	FS-030
+	DS-031
+	Imported result files parsed by parser module, mapped to test ID and instrument ID.
+	FS-031
+	________________
+
+
+🔹 5.5 Report Design
+DS ID
+	Description
+	Related FS ID
+	DS-040
+	Certificate of Analysis generated using PDF template engine (Docmosis).
+	FS-040
+	DS-041
+	Query builder allows custom report filters by user roles.
+	FS-041
+	________________
+
+
+🔹 5.6 Audit Trail and Electronic Signatures
+DS ID
+	Description
+	Related FS ID
+	DS-050
+	Audit logs stored in separate AUDIT_LOG table with 7 fields: action, old/new value, user, date/time, IP.
+	FS-050
+	DS-051
+	Signature capture uses modal prompt: reason + password confirmation.
+	FS-051
+	DS-052
+	Approved entries flagged as “LOCKED” in DB; edit controls hidden in UI.
+	FS-052
+	________________
+
+
+🔹 5.7 Backup & Storage Logic
+DS ID
+	Description
+	Related FS ID
+	DS-070
+	Daily backup scheduled at 02:00 AM via LIMS_DB_Backup.sh cron job.
+	FS-070
+	DS-071
+	Timestamps and User IDs stored in each main table (SAMPLE, TEST_RESULT).
+	FS-071
+	________________
+
+
+✅ 6. Configuration Summary
+Module
+	Key Configuration
+	User Management
+	Role-based access, password rules
+	Sample Workflow
+	Status transitions auto-managed
+	Test Templates
+	Min/max ranges, method references
+	Instrument Setup
+	Device ID mapping, file format rules
+	Report Generator
+	Template name, format = PDF only
+	________________
+
+
+✅ 7. Approval
+Role
+	Name
+	Signature
+	Date
+	Prepared by
+	[Your Name]
+	
+
+	
+
+	Reviewed by
+	IT Lead
+	
+
+	
+
+	Approved by
+	QA Manager

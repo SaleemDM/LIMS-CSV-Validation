@@ -1,0 +1,304 @@
+﻿Performance Qualification (PQ) Protocol
+System: LIMS – Laboratory Information Management System
+Company: 
+Validation Type: GAMP 5 – Category 4
+Document Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Entry
+	Document Title
+	Performance Qualification Protocol – LIMS
+	Prepared By
+	[Your Name], Validation Lead
+	Reviewed By
+	QA Manager, System Owner
+	Approved By
+	Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+To verify that the LIMS system performs reliably in the live environment, using real users, business SOPs, production-like data, and actual workflows.
+________________
+
+
+✅ 3. Scope
+Covers:
+* Real sample lifecycle execution
+
+* Analyst workflow for test entry
+
+* Manager review & electronic signature
+
+* CoA generation and approval
+
+* Use of SOPs, production roles, and live environment
+
+________________
+
+
+✅ 4. Roles & Responsibilities
+Role
+	Responsibility
+	Validation Lead
+	Coordinate execution, evidence
+	Lab Analyst
+	Perform entries using real SOP
+	Lab Reviewer
+	Sign off using configured workflows
+	QA
+	Witness, approve, and close report
+	________________
+
+
+✅ 5. Prerequisites
+Item
+	Status
+	IQ and OQ completed
+	✅
+	System configured for production
+	✅
+	SOPs for sample, test, CoA
+	✅
+	User accounts and roles created
+	✅
+	________________
+
+
+✅ 6. Test Environment
+Parameter
+	Value
+	Application Server
+	LIMS-SVR-01 (Production)
+	Database
+	LIMS-DB-01 (Oracle 19c)
+	Users
+	Real users per production roles
+	SOPs Used
+	SOP-LAB-001, SOP-TEST-002
+	________________
+
+
+✅ 7. PQ Test Cases
+________________
+
+
+🔹 TC-PQ-001: Real Sample Workflow Execution
+Step
+	Action
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Analyst registers real sample (with barcode)
+	Sample created with valid ID
+	
+
+	
+
+	
+
+	2
+	Sample lifecycle progresses through testing
+	Status updates: Registered → In Testing → Complete
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-PQ-002: Real Test Result Entry
+Step
+	Action
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Analyst enters results for actual pH test
+	Results saved with analyst ID
+	
+
+	
+
+	
+
+	2
+	Values out of range trigger alert
+	Warning shown, but data accepted
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-PQ-003: Real-Time Signature Approval
+Step
+	Action
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Reviewer signs off on completed sample
+	Signature challenge and record linked
+	
+
+	
+
+	
+
+	2
+	Signature log shows reason/password
+	Audit trail updated
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-PQ-004: CoA Report Generation
+Step
+	Action
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Reviewer generates CoA for sample
+	PDF generated with test results
+	
+
+	
+
+	
+
+	2
+	CoA locked after final approval
+	Version locked, no further edits
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-PQ-005: End-to-End Data Integrity Check
+Step
+	Action
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Review audit trail for sample
+	All events logged (create, edit, sign)
+	
+
+	
+
+	
+
+	2
+	Re-access record after logout
+	Record unchanged, signature intact
+	
+
+	
+
+	
+
+	________________
+
+
+✅ 8. Test Evidence to Capture
+   * Screenshots of each completed action
+
+   * Copies of CoA reports
+
+   * Audit trail exports
+
+   * Signed SOP reference pages
+
+   * Signature log from reviewer module
+
+________________
+
+
+✅ 9. Deviations (if any)
+ID
+	Description
+	Root Cause
+	CAPA
+	Closed By
+	Date
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	________________
+
+
+✅ 10. Summary & Conclusion
+All real-world business workflows tested successfully.
+✅ The system performs correctly in its operational environment.
+ No critical deviations observed.
+The LIMS system is ready for go-live and routine GxP operation.
+________________
+
+
+✅ 11. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Executed by
+	[Your Name]
+	
+
+	
+
+	Witnessed by
+	QA Analyst
+	
+
+	
+
+	Reviewed by
+	System Owner
+	
+
+	
+
+	Approved by
+	Compliance
+	
+
+	
+
+	________________

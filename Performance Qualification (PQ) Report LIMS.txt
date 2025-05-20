@@ -1,0 +1,172 @@
+﻿Performance Qualification (PQ) Report
+System: LIMS – Laboratory Information Management System
+Company: 
+Category: GAMP 5 – Category 4
+Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Entry
+	Document Title
+	Performance Qualification Report – LIMS
+	Prepared By
+	[Your Name], Validation Engineer
+	Reviewed By
+	QA Manager
+	Approved By
+	Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Objective
+To confirm that the LIMS system operates correctly and consistently in a real-use GxP environment, using actual users, SOPs, production data, and configured workflows, thereby ensuring it is fit for intended use.
+________________
+
+
+✅ 3. Summary of Execution
+All PQ test cases defined in the approved PQ Protocol were executed between [Insert Dates].
+Testing was performed using:
+* Production user roles (Analyst, Reviewer)
+
+* Live SOPs (e.g., SOP-LAB-001)
+
+* Configured test scenarios
+
+* Real or production-like sample data
+
+________________
+
+
+✅ 4. Test Case Execution Summary
+Test Case ID
+	Title
+	Status
+	Executed By
+	Date
+	TC-PQ-001
+	Real Sample Workflow Execution
+	Passed
+	Analyst A
+	2024-05-18
+	TC-PQ-002
+	Real Test Result Entry
+	Passed
+	Analyst A
+	2024-05-18
+	TC-PQ-003
+	Signature Workflow Approval
+	Passed
+	Reviewer B
+	2024-05-18
+	TC-PQ-004
+	CoA Report Generation
+	Passed
+	Reviewer B
+	2024-05-18
+	TC-PQ-005
+	End-to-End Data Integrity
+	Passed
+	QA Analyst
+	2024-05-18
+	________________
+
+
+✅ 5. Deviations Summary
+ID
+	Description
+	Root Cause
+	CAPA Action
+	Status
+	Closed By
+	PQ-DEV-001
+	Signature log failed to export
+	Browser pop-up blocked
+	IT unblocked export pop-up
+	Closed
+	QA Manager
+	________________
+
+
+✅ 6. Test Evidence
+   * Screenshots of:
+
+      * Sample registration
+
+      * Test result entry
+
+      * CoA generation
+
+      * Signature prompts
+
+      * Audit trails
+
+         * Signed execution checklists
+
+         * CoA PDF copies
+
+         * Signature event logs
+
+         * Final test data records
+
+________________
+
+
+✅ 7. Summary of Compliance
+Area
+	Verified
+	Evidence Attached
+	SOP-Driven Workflows
+	✅
+	Yes
+	Role-Based Approvals
+	✅
+	Yes
+	Signature Logs
+	✅
+	Yes
+	CoA Reporting
+	✅
+	Yes
+	Data Integrity Controls
+	✅
+	Yes
+	________________
+
+
+✅ 8. Conclusion
+The LIMS system passed all PQ tests simulating real-world use.
+✅ All workflows functioned properly with no major issues.
+ All deviations were resolved with corrective actions.
+The system is now qualified for routine operational use in GxP environments.
+________________
+
+
+✅ 9. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Executed by
+	[Your Name]
+	
+
+	[Insert]
+	Witnessed by
+	QA Analyst
+	
+
+	[Insert]
+	Reviewed by
+	System Owner
+	
+
+	[Insert]
+	Approved by
+	Compliance
+	
+
+	[Insert]

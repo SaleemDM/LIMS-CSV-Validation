@@ -1,0 +1,383 @@
+﻿Operational Qualification (OQ) Protocol
+System: LIMS – Laboratory Information Management System
+Company: DMS Pharma
+Category: GAMP 5 – Category 4
+Document Type: Protocol + Execution Template
+Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Details
+	Document Title
+	Operational Qualification Protocol – LIMS
+	Prepared By
+	[Your Name], Validation Lead
+	Reviewed By
+	QA Manager, System Owner
+	Approved By
+	Compliance Director
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+To verify that the LIMS system functions as intended, and its configured components, workflows, and controls perform consistently within operational boundaries.
+________________
+
+
+✅ 3. Scope
+This protocol covers:
+* Core workflows: Sample registration, test assignment, result entry
+
+* Role-based access control
+
+* Electronic signatures & audit trails
+
+* Interface validation (instrument import)
+
+* Report generation (CoA, audit logs)
+
+* Part 11 compliance checks
+
+________________
+
+
+✅ 4. Prerequisites
+Item
+	Status
+	Approved URS, FS, and DS
+	✅
+	IQ executed and passed
+	✅
+	LIMS configured as per design
+	✅
+	Risk Assessment reviewed
+	✅
+	Required SOPs in place (login, entry)
+	✅
+	________________
+
+
+✅ 5. Roles & Responsibilities
+Role
+	Responsibility
+	Validation Lead
+	Execute protocol and collect evidence
+	QA
+	Review results, observe critical tests
+	System Owner
+	Provide system access and test accounts
+	________________
+
+
+✅ 6. Test Environment
+Component
+	Details
+	Application Server
+	LIMS-SVR-01
+	Database Server
+	LIMS-DB-01 (Oracle 19c)
+	Web Browser
+	Chrome 114 (on Windows 10)
+	Middleware
+	LabConnect v2.5
+	________________
+
+
+✅ 7. OQ Test Cases
+________________
+
+
+🔹 TC-OQ-001: User Authentication
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Login with valid user credentials
+	User is logged in
+	
+
+	
+
+	
+
+	2
+	Attempt login with invalid password
+	Access denied with error message
+	
+
+	
+
+	
+
+	3
+	Exceed login attempts (5x)
+	Account is locked
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-002: Role-Based Access
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Analyst role logs in
+	Can only register samples and enter results
+	
+
+	
+
+	
+
+	2
+	Reviewer logs in
+	Can approve, sign, and view reports
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-003: Sample Registration Workflow
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Register new sample
+	Sample ID auto-generated, barcode shown
+	
+
+	
+
+	
+
+	2
+	Attempt to save with missing fields
+	Error prompts shown
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-004: Test Assignment & Result Entry
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Assign pH, Viscosity tests to sample
+	Test list updated on sample profile
+	
+
+	
+
+	
+
+	2
+	Enter result within valid range
+	Saved without error
+	
+
+	
+
+	
+
+	3
+	Enter result outside range
+	Warning triggered, entry still logged
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-005: Instrument Data Import
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Upload instrument CSV with valid data
+	Data parsed, linked to correct sample
+	
+
+	
+
+	
+
+	2
+	Upload malformed file
+	Import rejected, error message displayed
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-006: Audit Trail Verification
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Modify result entry
+	Audit trail logs old and new values
+	
+
+	
+
+	
+
+	2
+	Delete a draft sample
+	Deletion logged with user ID & timestamp
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-007: Electronic Signature Validation
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Approve test result (sign)
+	Signature prompt (reason + password) shown
+	
+
+	
+
+	
+
+	2
+	View audit log for approval
+	Signature ID + reason logged
+	
+
+	
+
+	
+
+	________________
+
+
+🔹 TC-OQ-008: CoA Report Generation
+Step
+	Description
+	Expected Result
+	Pass/Fail
+	Tester
+	Date
+	1
+	Generate CoA for approved sample
+	PDF generated with correct test data
+	
+
+	
+
+	
+
+	2
+	Modify template and reprint
+	New version tracked and labeled
+	
+
+	
+
+	
+
+	________________
+
+
+✅ 8. Deviations & CAPA (if any)
+ID
+	Description
+	Root Cause
+	Corrective Action
+	Closed By
+	Date
+	OQ-DEV-01
+	pH test failed to validate range
+	Config error
+	Rule re-configured
+	QA
+	TBD
+	________________
+
+
+✅ 9. Summary & Conclusion
+All applicable operational test cases were executed.
+✅ System functions are operating as expected under normal use cases.
+ Deviations were addressed and resolved.
+________________
+
+
+✅ 10. Approval
+Role
+	Name
+	Signature
+	Date
+	Executed by
+	[Your Name]
+	
+
+	
+
+	Witnessed by
+	QA Analyst
+	
+
+	
+
+	Reviewed by
+	System Owner
+	
+
+	
+
+	Approved by
+	Compliance

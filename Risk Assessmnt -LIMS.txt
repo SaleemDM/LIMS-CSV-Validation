@@ -1,0 +1,270 @@
+﻿RISK ASSESSMENT PROTOCOL & REPORT
+For: LIMS (Laboratory Information Management System)
+ System Type: GAMP Category 4 | Regulatory Scope: 21 CFR Part 11 + EU Annex 11
+ Based on: ICH Q9, GAMP 5 Risk-Based Validation Principles
+________________
+
+
+✅ SECTION 1: PROTOCOL HEADER
+Field
+	Entry
+	Document Title
+	Risk Assessment Protocol & Report – LIMS
+	Version
+	1.0
+	System
+	LIMS vX.X – Sample, Test & Reporting
+	Prepared by
+	[Your Name], Validation Engineer
+	Reviewed by
+	QA Manager, Lab IT Lead
+	Approved by
+	Compliance Director
+	Date
+	[Insert Date]
+	________________
+
+
+✅ SECTION 2: PURPOSE
+This protocol defines the process to identify, assess, and mitigate risks related to LIMS usage in a GxP-regulated environment. It ensures that validation is focused on functions impacting product quality, data integrity, and patient safety.
+
+
+________________
+
+
+✅ SECTION 3: METHODOLOGY
+Risk Priority Number (RPN) = Severity × Occurrence × Detectability
+ Each rated 1–5 (High = 5).
+Post-mitigation, risk is reassessed.
+✅ SECTION 4: FUNCTIONAL RISK ASSESSMENT TABLE (Pre-Mitigation)
+
+
+ID
+	Function
+	Risk Scenario
+	S
+	O
+	D
+	RPN
+	Risk Level
+	Mitigation Strategy
+	R1
+	Sample Registration
+	Duplicate/missing sample leads to lost testing
+	4
+	3
+	3
+	36
+	Medium
+	Enforce unique ID rules, barcode scanning, SOP for duplicate handling
+	R2
+	Test Result Entry
+	Incorrect result entry affects product release
+	5
+	4
+	3
+	60
+	High
+	Dual-entry verification, upper/lower limit validation, result recheck flag
+	R3
+	Instrument Interface
+	Imported data mismatch or corruption
+	5
+	3
+	3
+	45
+	Medium
+	File checksum verification, system-to-system mapping table, import audit logging
+	R4
+	Audit Trail
+	Edits not tracked / deletion goes unnoticed
+	5
+	3
+	4
+	60
+	High
+	Immutable audit trail table, periodic audit trail review, OQ test of audit engine
+	R5
+	Electronic Signatures
+	Unauthorized approval or bypass
+	5
+	2
+	4
+	40
+	Medium
+	Enforce signature challenge (reason + password), assign signature roles per SOP
+	R6
+	CoA Reporting
+	Incomplete certificate leads to regulatory rejection
+	4
+	3
+	3
+	36
+	Medium
+	Lock CoA templates, enable CoA preview before finalization
+	R7
+	User Access Controls
+	Over-permissioned users bypass controls
+	5
+	3
+	3
+	45
+	Medium
+	Implement RBAC, restrict Admin privileges, regular access reviews
+	R8
+	Data Backups
+	Loss of sample/test data
+	5
+	2
+	2
+	20
+	Low
+	Daily encrypted backup to validated server, monthly test restore SOP
+	
+
+High-risk areas (RPN > 50):
+* Require end-to-end testing in IQ/OQ/PQ
+
+* Will be traced directly in Traceability Matrix
+
+* May need additional user training and monitoring
+
+Medium-risk areas (RPN 21–50):
+   * Require full functional testing
+
+   * Focused PQ and SOP coverage
+
+Low-risk areas (RPN ≤ 20):
+      * Document and test where feasible
+
+      * Leverage vendor validation documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✅ SECTION 6: POST-MITIGATION RE-ASSESSMENT
+
+
+
+
+ID
+	Function
+	S
+	O
+	D
+	New RPN
+	Final Risk Level
+	R1
+	Sample Registration
+	3
+	2
+	2
+	12
+	Low
+	R2
+	Test Result Entry
+	5
+	2
+	2
+	20
+	Low
+	R3
+	Instrument Interface
+	4
+	2
+	2
+	16
+	Low
+	R4
+	Audit Trail
+	5
+	2
+	2
+	20
+	Low
+	R5
+	Electronic Signatures
+	4
+	2
+	2
+	16
+	Low
+	R6
+	CoA Reporting
+	3
+	2
+	2
+	12
+	Low
+	R7
+	Access Controls
+	4
+	2
+	2
+	16
+	Low
+	R8
+	Data Backup
+	5
+	1
+	1
+	5
+	Very Low
+	✅ SECTION 7: TRACEABILITY TO TESTING
+         * R1, R2, R4, R5 → PQ Testing required
+
+         * R3, R6, R7 → OQ Testing
+
+         * R8 → IQ check + SOP testing
+
+________________
+
+
+✅ SECTION 8: CONCLUSION
+All critical functions have been assessed, mitigated, and assigned to test protocols accordingly.
+Post-mitigation risks are acceptable.
+ Validation activities will ensure compliance with FDA 21 CFR Part 11, EU GMP Annex 11, and data integrity standards (ALCOA+).
+________________
+
+
+✅ SECTION 9: APPROVAL
+Role
+	Name
+	Signature
+	Date
+	Prepared by
+	[Your Name]
+	
+
+	
+
+	Reviewed by
+	QA Manager
+	
+
+	
+
+	Approved by
+	Compliance Lead
+	
+
+	
+
+	________________

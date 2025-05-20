@@ -1,0 +1,316 @@
+﻿Installation Qualification (IQ) Protocol & Report
+System: LIMS (Laboratory Information Management System)
+Company: DMS Pharma
+Category: GAMP 5 – Category 4
+Document Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Entry
+	Document Title
+	IQ Protocol & Report – LIMS
+	Prepared By
+	[Your Name], Validation Engineer
+	Reviewed By
+	QA Manager, IT Infrastructure
+	Approved By
+	Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+To verify and document that the LIMS system has been installed correctly in accordance with vendor specifications and internal system requirements, including hardware, software, network, and security configurations.
+________________
+
+
+✅ 3. Scope
+Covers initial installation of:
+* LIMS application
+
+* Database instance
+
+* Application server
+
+* Network components
+
+* Supporting middleware/instrument integration tools
+
+________________
+
+
+✅ 4. Responsibilities
+Role
+	Responsibility
+	Validation Lead
+	Author protocol, coordinate execution
+	IT/Infra Team
+	Install system, provide environment info
+	QA
+	Witness tests, verify documentation
+	System Owner
+	Provide system access, confirm usage
+	________________
+
+
+✅ 5. Prerequisites
+   * Validation Plan approved
+
+   * URS and FS approved
+
+   * Design documentation available
+
+   * Vendor software and config checklist received
+
+   * Infrastructure readiness confirmed by IT
+
+________________
+
+
+✅ 6. Installation Qualification Activities
+6.1 Software Inventory Check
+Component
+	Version
+	Installed? (Y/N)
+	Verified By
+	Date
+	LIMS Core Software
+	vX.X
+	
+
+	
+
+	
+
+	Oracle Database
+	19c
+	
+
+	
+
+	
+
+	Tomcat Server
+	9.x
+	
+
+	
+
+	
+
+	Windows Server
+	2019
+	
+
+	
+
+	
+
+	Middleware Tool
+	[Name]
+	
+
+	
+
+	
+
+	________________
+
+
+6.2 Hardware & Infrastructure
+Server/Item
+	Specification
+	Verified?
+	Initials
+	Date
+	Application Server
+	16GB RAM, 500GB SSD, Windows Server
+	
+
+	
+
+	
+
+	Database Server
+	32GB RAM, 1TB SSD, RAID 5
+	
+
+	
+
+	
+
+	Barcode Printer
+	Zebra ZD420
+	
+
+	
+
+	
+
+	Client Workstation
+	Win 10 Pro, Chrome v110+
+	
+
+	
+
+	
+
+	________________
+
+
+6.3 Directory and Path Validation
+Path/Folder
+	Exists?
+	Access Control Verified?
+	Initials
+	Date
+	C:\Program Files\LIMS\
+	
+
+	
+
+	
+
+	
+
+	D:\LIMS_Backups\
+	
+
+	
+
+	
+
+	
+
+	\LIMS_SERVER\Shared\InstrumentData\
+	
+
+	
+
+	
+
+	
+
+	________________
+
+
+6.4 Service and Port Validation
+Service/Port
+	Expected Status
+	Verified?
+	Comments
+	LIMS Application Service
+	Running
+	
+
+	
+
+	Database Listener Port
+	1521 Open
+	
+
+	
+
+	Web Server Port (HTTPS)
+	443 Open
+	
+
+	
+
+	________________
+
+
+6.5 Software Installation Log Review
+Item
+	Verified
+	Comments
+	LIMS Installer Log
+	
+
+	
+
+	Middleware Setup Log
+	
+
+	
+
+	Database Initialization
+	
+
+	
+
+	Antivirus Exclusion Setup
+	
+
+	
+
+	________________
+
+
+✅ 7. Deviation Management
+ID
+	Description
+	Root Cause
+	CAPA
+	Resolution Date
+	
+
+	
+
+	
+
+	
+
+	
+
+	________________
+
+
+✅ 8. Attachments
+      * Screenshots of installed programs
+
+      * Service console or Task Manager screenshots
+
+      * Folder structure snapshots
+
+      * Network access test logs
+
+      * Signature pages
+
+________________
+
+
+✅ 9. Summary & Conclusion
+All IQ activities have been executed and documented. The LIMS system is installed in accordance with vendor specifications and infrastructure requirements.
+All deviations (if any) have been addressed. The system is now eligible for Operational Qualification (OQ).
+________________
+
+
+✅ 10. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Executed by
+	[Your Name]
+	
+
+	
+
+	Witnessed by
+	QA Analyst
+	
+
+	
+
+	Reviewed by
+	IT Lead
+	
+
+	
+
+	Approved by
+	Compliance Lead

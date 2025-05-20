@@ -1,0 +1,165 @@
+﻿Supplier Assessment Report – LIMS Vendor
+Company: 
+System: LIMS
+Supplier Name: [Insert Vendor Name]
+Assessment Type: Remote / On-Site / Documentation-Based
+Document Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Entry
+	Document Title
+	Supplier Assessment – LIMS Vendor
+	Prepared By
+	[Your Name], QA / CSV Lead
+	Reviewed By
+	Compliance Manager
+	Approved By
+	Quality Head
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+To evaluate and document the qualification of the LIMS vendor as a reliable, compliant, and capable supplier for the DMS Pharma GxP-regulated environment.
+________________
+
+
+✅ 3. Scope
+* Software delivery
+
+* Development practices (GxP, SDLC)
+
+* Change control
+
+* Testing & release documentation
+
+* 21 CFR Part 11 / Annex 11 compliance
+
+* Support and escalation procedures
+
+________________
+
+
+✅ 4. Supplier Information
+Field
+	Details
+	Company Name
+	[Insert Vendor Name]
+	Software Name/Version
+	LIMS vX.X
+	Location (HQ)
+	[City, Country]
+	Nature of Service
+	Commercial off-the-shelf (COTS), configured
+	GAMP Category
+	4 – Configured Software
+	GMP Impact
+	Direct impact on quality/data integrity
+	________________
+
+
+✅ 5. Assessment Methodology
+   * Vendor self-assessment form reviewed
+
+   * Product documentation (validation package, QMS evidence) reviewed
+
+   * Public certifications (ISO 9001, ISO 27001) checked
+
+   * References or audits considered (if available)
+
+________________
+
+
+✅ 6. Evaluation Criteria
+Area
+	Score (1–5)
+	Notes
+	GxP Awareness
+	5
+	Vendor supports GxP clients globally
+	SDLC with documentation
+	4
+	Agile process with change logs
+	Validation Package available
+	5
+	IQ/OQ documents provided
+	Part 11/Annex 11 Readiness
+	5
+	Audit trail, eSign, security built-in
+	Defect & Change Tracking
+	4
+	Jira used internally
+	SOPs (Testing, Release)
+	4
+	Available on request
+	Support/Helpdesk SLA
+	4
+	Email + ticket-based support
+	Business Continuity (BCP/DRP)
+	4
+	Documents shared
+	Cybersecurity/ISO 27001
+	5
+	ISO certificate shared
+	________________
+
+
+✅ 7. Risk Evaluation
+Risk Area
+	Risk Description
+	Mitigation / Control
+	Vendor validation quality
+	Incomplete documentation
+	Customer supplements with internal testing
+	Release control
+	Uncontrolled updates
+	Version freeze + Change Control SOP
+	Cloud hosting (if SaaS)
+	Uptime / access dependency
+	SLA + backups + validated infra
+	________________
+
+
+✅ 8. Decision & Classification
+✅ Vendor is deemed “Qualified” based on this assessment, and appropriate for use in regulated systems.
+ Qualification is valid for 2 years or until a major release or compliance change.
+________________
+
+
+✅ 9. Attachments
+      * Vendor Questionnaire (completed)
+
+      * ISO certificates
+
+      * Validation package checklist (if supplied)
+
+      * Screenshot of product version info
+
+      * CAPA/Incident procedure overview (if shared)
+
+________________
+
+
+✅ 10. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Assessed by
+	[Your Name]
+	
+
+	
+
+	QA Manager
+	[QA Reviewer]
+	
+
+	
+
+	Compliance Lead
+	[Compliance]

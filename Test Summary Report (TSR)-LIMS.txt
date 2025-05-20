@@ -1,0 +1,168 @@
+﻿Test Summary Report (TSR)
+System: Laboratory Information Management System (LIMS)
+Company: 
+Validation Type: GAMP 5 – Category 4
+Document Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Entry
+	Document Title
+	Test Summary Report – LIMS
+	Prepared By
+	[Your Name], Validation Engineer
+	Reviewed By
+	QA Manager
+	Approved By
+	Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+This report summarizes the results of all qualification testing (IQ, OQ, PQ) conducted on the LIMS system and confirms the system is validated, documented, and ready for live GxP operation.
+________________
+
+
+✅ 3. Scope
+Covers testing of:
+* Installation Qualification (IQ)
+
+* Operational Qualification (OQ)
+
+* Performance Qualification (PQ)
+
+* Part 11 compliance checks
+
+* Audit trail & signature validation
+
+* Critical functional and risk-based items
+
+________________
+
+
+✅ 4. Test Phase Summary
+Test Phase
+	Test Case Count
+	Executed
+	Passed
+	Failed
+	Deviation(s)
+	IQ
+	7
+	✅
+	7
+	0
+	0
+	OQ
+	8
+	✅
+	8
+	0
+	1 (resolved)
+	PQ
+	5
+	✅
+	5
+	0
+	1 (resolved)
+	Total
+	20
+	✅
+	20
+	0
+	2
+	________________
+
+
+✅ 5. Deviation Summary
+ID
+	Test Phase
+	Description
+	Root Cause
+	Resolution
+	Status
+	OQ-DEV-001
+	OQ
+	pH test range validation didn’t trigger
+	Config value missed
+	Rule updated & retested
+	Closed
+	PQ-DEV-001
+	PQ
+	Signature export blocked by browser
+	Pop-up blocked
+	IT whitelisted LIMS site
+	Closed
+	________________
+
+
+✅ 6. Key Test Results
+   * ✅ Audit trail records edits, deletions, and e-signatures
+
+   * ✅ Electronic signatures enforce reason + password (Part 11)
+
+   * ✅ Result entry is validated against upper/lower thresholds
+
+   * ✅ Barcode sample registration and lifecycle workflow verified
+
+   * ✅ Instrument file import tested (CSV + error handling)
+
+   * ✅ Certificates of Analysis (CoA) generated and version-controlled
+
+________________
+
+
+✅ 7. Risk-Based Coverage
+All high and medium-risk URS items from the Risk Assessment were fully tested in IQ, OQ, or PQ:
+      * Audit trail
+
+      * Signature controls
+
+      * Result validation
+
+      * User access management
+
+      * Data backup and retention
+
+________________
+
+
+✅ 8. Conclusion
+The LIMS system has passed all validation tests and is proven to meet:
+         * Functional requirements (URS)
+
+         * Regulatory compliance (21 CFR Part 11, EU Annex 11)
+
+         * Data integrity principles (ALCOA+)
+
+         * GxP expectations per FDA, EMA, and WHO standards
+
+No outstanding deviations remain. The system is now qualified for GxP use and ready for go-live.
+________________
+
+
+✅ 9. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Prepared by
+	[Your Name]
+	
+
+	[Insert]
+	Reviewed by
+	QA Manager
+	
+
+	[Insert]
+	Approved by
+	Compliance
+	
+
+	[Insert]
+	________________

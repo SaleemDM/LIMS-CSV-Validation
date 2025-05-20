@@ -1,0 +1,177 @@
+﻿Operational Qualification (OQ) Report
+System: LIMS – Laboratory Information Management System
+Company: 
+Validation Type: GAMP 5 Category 4
+Version: 1.0
+________________
+
+
+✅ 1. Document Control
+Field
+	Entry
+	Document Title
+	Operational Qualification Report – LIMS
+	Prepared By
+	[Your Name], Validation Engineer
+	Reviewed By
+	QA Manager
+	Approved By
+	Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Objective
+This report documents the results of executing the Operational Qualification Protocol for the LIMS system. It confirms that all functional and regulatory requirements operate correctly under defined conditions.
+________________
+
+
+✅ 3. Summary of Execution
+All OQ test cases defined in the protocol were executed between [Start Date] and [End Date].
+✅ All critical functional areas were tested, including:
+* User authentication
+
+* Role-based access control
+
+* Sample and test workflows
+
+* Audit trails and electronic signatures
+
+* Report generation
+
+* Instrument interface
+
+* Part 11 controls
+
+________________
+
+
+✅ 4. OQ Test Results Summary
+Test Case ID
+	Title
+	Status
+	Executed By
+	Date
+	TC-OQ-001
+	User Authentication
+	Passed
+	J. Patel
+	2024-05-17
+	TC-OQ-002
+	Role-Based Access Control
+	Passed
+	QA Analyst
+	2024-05-17
+	TC-OQ-003
+	Sample Registration Workflow
+	Passed
+	Analyst A
+	2024-05-17
+	TC-OQ-004
+	Test Assignment & Result Entry
+	Passed
+	Analyst A
+	2024-05-17
+	TC-OQ-005
+	Instrument Data Import
+	Passed
+	IT Validation
+	2024-05-17
+	TC-OQ-006
+	Audit Trail Verification
+	Passed
+	QA Analyst
+	2024-05-17
+	TC-OQ-007
+	Electronic Signature Validation
+	Passed
+	QA Analyst
+	2024-05-17
+	TC-OQ-008
+	CoA Report Generation
+	Passed
+	Lab Supervisor
+	2024-05-17
+	________________
+
+
+✅ 5. Deviations Summary
+Deviation ID
+	Description
+	Root Cause
+	CAPA Action Taken
+	Status
+	Closed By
+	OQ-DEV-001
+	pH result warning did not trigger
+	Validation rule misconfigured
+	Rule updated in Test Config
+	Closed
+	QA Lead
+	________________
+
+
+✅ 6. Evidence Attached
+   * Executed and signed test case sheets
+
+   * Screenshots: sample registration, result entry, CoA output
+
+   * Audit trail exports
+
+   * Signature logs
+
+   * Deviation form and CAPA records
+
+________________
+
+
+✅ 7. Summary of Compliance
+Area
+	Result
+	User Roles / Access Control
+	Verified ✅
+	Part 11 Compliance (Signatures, Audit Trails)
+	Verified ✅
+	Functional Requirements Met
+	100% ✅
+	Critical Risk Controls Tested
+	100% ✅
+	________________
+
+
+✅ 8. Conclusion
+The Operational Qualification of the DMS Pharma – LIMS system is successfully completed.
+✅ All planned tests were executed
+✅ All results met expected outcomes
+✅ One minor deviation occurred and was resolved via CAPA
+The system is now qualified to proceed to Performance Qualification (PQ).
+________________
+
+
+✅ 9. Final Approval
+Role
+	Name
+	Signature
+	Date
+	Executed by
+	[Your Name]
+	
+
+	[Insert]
+	Witnessed by
+	QA Analyst
+	
+
+	[Insert]
+	Reviewed by
+	System Owner
+	
+
+	[Insert]
+	Approved by
+	Compliance
+	
+
+	[Insert]
+	________________

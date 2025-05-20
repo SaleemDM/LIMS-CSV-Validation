@@ -1,0 +1,234 @@
+﻿Functional Specification (FS) – LIMS System
+(GAMP 5 Category 4 – Configured System)
+________________
+
+
+✅ 1. Document Control
+Field
+	Value
+	Document Title
+	Functional Specification – LIMS
+	Version
+	1.0
+	Prepared By
+	[Your Name], Validation Engineer
+	Reviewed By
+	Lab Manager, IT, QA
+	Approved By
+	Compliance Lead
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+This document defines the functional behavior of the LIMS based on the approved User Requirements Specification (URS). It translates business needs into system functions, input/output behavior, rules, validations, and workflows.
+________________
+
+
+✅ 3. Scope
+Applies to all modules of the LIMS:
+* Sample registration
+
+* Test assignment and result entry
+
+* Instrument interfacing
+
+* Reporting
+
+* Security and audit trails
+
+* Regulatory compliance
+
+________________
+
+
+✅ 4. References
+   * URS Document (Ref: URS-LIMS-01)
+
+   * Validation Plan (VP-LIMS-01)
+
+   * GAMP 5 Guidelines
+
+   * 21 CFR Part 11
+
+   * Internal SOP: CSV-002, ITSEC-003
+
+________________
+
+
+✅ 5. Functional Requirements (Linked to URS)
+🔹 5.1 Login and User Access
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-001
+	System shall authenticate users with username and password.
+	URS-060
+	Complies with 21 CFR Part 11
+	FS-002
+	Roles (Admin, Analyst, Reviewer) shall restrict access to specific functions.
+	URS-060
+	
+
+	________________
+
+
+🔹 5.2 Sample Management
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-010
+	Sample registration form shall include: sample ID, type, collection date, project.
+	URS-010
+	Sample ID must be unique.
+	FS-011
+	System shall generate and print a barcode label upon registration.
+	URS-011
+	Uses Zebra printer via USB
+	FS-012
+	Lifecycle status: Pending ➝ In-Testing ➝ Complete ➝ Archived.
+	URS-012
+	Status auto-updates with progress
+	________________
+
+
+🔹 5.3 Test Assignment and Result Entry
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-020
+	Users may assign predefined tests (e.g., pH, viscosity) to samples.
+	URS-020
+	Test templates are configurable
+	FS-021
+	Manual result entry fields must accept text, numeric, and units.
+	URS-020
+	Field-level validation enforced
+	FS-022
+	Result entries outside limits must trigger a warning.
+	URS-021
+	Limits pulled from master test config
+	FS-023
+	All result entries/edits must be audit-trailed.
+	URS-022
+	Includes timestamp and user ID
+	________________
+
+
+🔹 5.4 Instrument Integration
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-030
+	LIMS shall support import of test results via CSV/API from instruments.
+	URS-030
+	File watcher or direct API
+	FS-031
+	Each imported result shall be tagged with instrument ID and test ID.
+	URS-031
+	Required for traceability
+	________________
+
+
+🔹 5.5 Reports and Certificates
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-040
+	CoA reports shall be generated in PDF with test summary, results, and sign-off.
+	URS-040
+	CoA template configurable
+	FS-041
+	System shall allow filter-based queries for sample/test history.
+	URS-041
+	Filters: date, status, test type
+	________________
+
+
+🔹 5.6 Regulatory Compliance
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-050
+	Audit trail shall log: create/edit/delete, who, when, what.
+	URS-022, URS-050
+	Permanent and non-editable
+	FS-051
+	Electronic signatures shall require reason entry and password re-confirmation.
+	URS-051
+	21 CFR Part 11 compliant
+	FS-052
+	Once approved, data must become read-only.
+	URS-052
+	Approval disables editing
+	________________
+
+
+🔹 5.7 Security & Password Policies
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-060
+	Passwords must expire every 90 days.
+	URS-061
+	Configurable setting
+	FS-061
+	After 5 failed login attempts, the account must lock automatically.
+	URS-062
+	Admin must reset manually
+	________________
+
+
+🔹 5.8 Backup & Data Integrity
+FS ID
+	Functional Description
+	URS Ref
+	Notes
+	FS-070
+	System shall create daily automatic backups.
+	URS-071
+	Saved on secure network drive
+	FS-071
+	Data must be timestamped and linked to user ID for every entry.
+	URS-070
+	Immutable log required
+	________________
+
+
+✅ 6. Diagrams (Optional – Include if Required)
+      * System Workflow Diagram
+
+      * Data Flow Diagram (DFD)
+
+      * Screen Mockups (Sample Entry, Result Input)
+
+________________
+
+
+✅ 7. Approval
+Role
+	Name
+	Signature
+	Date
+	Prepared by
+	[Your Name]
+	
+
+	
+
+	Reviewed by
+	System Owner
+	
+
+	
+
+	Approved by
+	QA Manager

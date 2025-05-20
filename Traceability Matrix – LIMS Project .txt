@@ -1,0 +1,109 @@
+﻿Traceability Matrix – LIMS Project 
+Validation Scope: URS → FS → DS → Test Case ID → Test Type
+System Type: GAMP Category 4
+Document Version: 1.0
+________________
+
+
+✅ Sample Format:
+URS ID
+	URS Description
+	FS ID
+	DS ID
+	Test Case ID
+	Test Phase
+	URS-001
+	System shall be accessible via browser
+	FS-001
+	DS-001
+	TC-IQ-001
+	IQ
+	URS-010
+	Users shall register samples with a unique ID
+	FS-010
+	DS-010
+	TC-OQ-003
+	OQ
+	URS-020
+	Allow test result entry with validation
+	FS-020
+	DS-020
+	TC-OQ-004
+	OQ
+	URS-022
+	All result edits must be audit-trailed
+	FS-023
+	DS-050
+	TC-OQ-006
+	OQ
+	URS-030
+	LIMS shall import results from instruments
+	FS-030
+	DS-030
+	TC-OQ-005
+	OQ
+	URS-040
+	Generate Certificates of Analysis in PDF
+	FS-040
+	DS-040
+	TC-OQ-008
+	OQ
+	URS-050
+	System must comply with 21 CFR Part 11
+	FS-050
+	DS-050
+	TC-OQ-007
+	OQ
+	URS-060
+	Access must be role-based
+	FS-002
+	DS-002
+	TC-OQ-002
+	OQ
+	URS-070
+	Data must be backed up daily
+	FS-070
+	DS-070
+	TC-IQ-005
+	IQ
+	URS-012
+	Sample status must be tracked (Pending ➝ Archived)
+	FS-012
+	DS-012
+	TC-PQ-001
+	PQ
+	URS-021
+	System must alert if result out of spec
+	FS-022
+	DS-022
+	TC-PQ-002
+	PQ
+	URS-051
+	Signatures must require reason and password
+	FS-051
+	DS-051
+	TC-PQ-003
+	PQ
+	URS-041
+	Reports must be filterable by test, analyst, date
+	FS-041
+	DS-041
+	TC-PQ-004
+	PQ
+	URS-070
+	Every data entry must be timestamped and linked to user
+	FS-071
+	DS-071
+	TC-PQ-005
+	PQ
+	________________
+
+
+✅ Summary:
+*  All User Requirements are mapped to FS & DS
+
+*  Every requirement is validated through IQ, OQ, or PQ
+
+*  This matrix is a core deliverable in your Validation Master File (VMF)
+
+*  Enables audit traceability, deviation checks, and test coverage reporting
