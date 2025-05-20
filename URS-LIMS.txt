@@ -1,0 +1,204 @@
+﻿User Requirements Specification (URS) – Laboratory Information Management System (LIMS)
+(GAMP Category 4 – Configured System)
+________________
+
+
+✅ 1. Document Control
+Field
+	Value
+	Document Title
+	User Requirements Specification – LIMS
+	Version
+	1.0
+	Prepared By
+	[Your Name], Validation Lead
+	Reviewed By
+	QA, Lab Manager, IT
+	Approved By
+	Quality Head
+	Date
+	[Insert Date]
+	________________
+
+
+✅ 2. Purpose
+This document defines the business, functional, and regulatory requirements for the Laboratory Information Management System (LIMS) to support sample management, testing workflows, and compliance with GxP and 21 CFR Part 11.
+________________
+
+
+✅ 3. Scope
+Covers all core modules of LIMS:
+* Sample lifecycle management
+
+* Instrument interfacing
+
+* Data entry and results management
+
+* Reporting and certificate of analysis
+
+* Electronic signatures, audit trails
+
+* Integration with ERP and archival systems
+
+________________
+
+
+✅ 4. Definitions and Abbreviations
+Term
+	Definition
+	LIMS
+	Laboratory Information Management System
+	URS
+	User Requirements Specification
+	SOP
+	Standard Operating Procedure
+	GxP
+	Good Practice (GMP, GLP, etc.)
+	________________
+
+
+✅ 5. User Requirements
+Each requirement can be mapped in the Traceability Matrix to a test case.
+🔹 5.1 General System Requirements
+URS ID
+	Requirement Description
+	Priority
+	URS-001
+	The system shall be accessible via web browser.
+	High
+	URS-002
+	The system shall support at least 50 concurrent users.
+	High
+	URS-003
+	System availability shall be ≥ 99.5% uptime.
+	High
+	________________
+
+
+🔹 5.2 Sample Management
+URS ID
+	Requirement Description
+	Priority
+	URS-010
+	Users shall be able to register a new sample with unique ID.
+	High
+	URS-011
+	The system shall allow barcoding of sample containers.
+	Medium
+	URS-012
+	The sample lifecycle (logged ➝ tested ➝ archived) must be tracked.
+	High
+	________________
+
+
+🔹 5.3 Test Result Entry & Management
+URS ID
+	Requirement Description
+	Priority
+	URS-020
+	Users shall be able to enter test results manually or via instrument import.
+	High
+	URS-021
+	The system shall validate numeric results against pre-defined limits.
+	Medium
+	URS-022
+	All result changes must be recorded in an audit trail.
+	High
+	________________
+
+
+🔹 5.4 Instrument Integration
+URS ID
+	Requirement Description
+	Priority
+	URS-030
+	System shall interface with lab instruments via middleware or direct API.
+	High
+	URS-031
+	Imported results must be timestamped and traceable to instrument ID.
+	High
+	________________
+
+
+🔹 5.5 Reporting
+URS ID
+	Requirement Description
+	Priority
+	URS-040
+	The system shall generate Certificates of Analysis (CoA) in PDF format.
+	High
+	URS-041
+	Reports must be filtered by test, date, sample ID, and analyst.
+	Medium
+	________________
+
+
+🔹 5.6 Regulatory Compliance
+URS ID
+	Requirement Description
+	Priority
+	URS-050
+	The system must be compliant with 21 CFR Part 11.
+	High
+	URS-051
+	Electronic signatures must be secure and audit-trailed.
+	High
+	URS-052
+	System shall lock records after approval.
+	High
+	________________
+
+
+🔹 5.7 User Access and Security
+URS ID
+	Requirement Description
+	Priority
+	URS-060
+	User access must be role-based.
+	High
+	URS-061
+	System shall force password change every 90 days.
+	Medium
+	URS-062
+	Failed login attempts shall lock account after 5 tries.
+	High
+	________________
+
+
+🔹 5.8 Data Integrity and Backup
+URS ID
+	Requirement Description
+	Priority
+	URS-070
+	All data entries must be traceable to a user and timestamp.
+	High
+	URS-071
+	The system must back up data daily to secure storage.
+	High
+	________________
+
+
+✅ 6. Approval
+Role
+	Name
+	Signature
+	Date
+	Prepared by
+	[Your Name]
+	
+
+	
+
+	Reviewed by
+	Lab Manager
+	
+
+	
+
+	Approved by
+	QA Head
+	
+
+	
+
+	________________
